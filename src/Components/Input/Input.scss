@@ -1,0 +1,72 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+
+  label {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(23, 23, 25, 0.3);
+  }
+
+  input {
+    width: 334px;
+    height: 48px;
+
+    padding: 12px 15px;
+
+    border: 1px solid rgba(23, 23, 25, 0.2);
+    outline: none;
+    border-radius: 5px;
+
+    font-size: 20px;
+    line-height: 24px;
+    color: #272727;
+
+    &:focus {
+      background: rgba(197, 228, 249, 0.3);
+
+      border: 1px solid #1390E5;
+    }
+  }
+
+  &_password {
+    position: relative;
+
+    margin-bottom: 40px;
+
+    input {
+      padding-right: 50px;
+    }
+
+    button {
+      position: absolute;
+      top: 33px;
+      right: 12px;
+
+      background-color: transparent;
+      outline: none;
+      border: none;
+
+      cursor: pointer;
+
+      svg {
+        width: 24px;
+        height: 24px;
+
+        stroke: #D1D1D1;
+      }
+    }
+
+    input:focus + button {
+      svg {
+        path {
+          stroke: #1390E5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.tooltip {
+  position: absolute;
+  top: 44px;
+  right: -85px;
+
+  width: 226px;
+
+  padding: 15px;
+
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+
+  animation-name: show;
+  animation-duration: .5s;
+
+  p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1390E5;
+
+    text-decoration: none;
+  }
+}

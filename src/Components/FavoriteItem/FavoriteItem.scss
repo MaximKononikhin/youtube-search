@@ -1,0 +1,76 @@
+.favorite-list__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 13px 20px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #F1F1F1;
+
+  p {
+    margin: 0;
+
+    cursor: pointer;
+  }
+
+  &:first-child {
+    border-top: 1px solid #F1F1F1;
+  }
+}
+
+.favorite-list__delete-btn-wrapper {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  cursor: pointer;
+}
+
+.favorite-list__delete-btn {
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 8px;
+    right: 0;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: #000000;
+
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 8px;
+    right: 0;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: #000000;
+
+    transform: rotate(-45deg);
+  }
+}

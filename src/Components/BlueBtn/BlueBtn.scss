@@ -1,0 +1,26 @@
+.blue-btn {
+  width: 150px;
+
+  padding: 14px 20px;
+
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  background: #1390E5;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition: linear .15s;
+
+  &:disabled {
+    background-color: grey;
+  }
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
